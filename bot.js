@@ -1,3 +1,16 @@
+// Для корректной работы на Railway
+process.env.NTBA_FIX_319 = "1";
+process.env.NTBA_FIX_350 = "1";
+
+// Обработка ошибок
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+});
+
+process.on('uncaughtException', (error) => {
+    console.error('Uncaught Exception:', error);
+});
+
 require('dotenv').config();
 const { Telegraf } = require('telegraf');
 const { createWorker } = require('tesseract.js');
