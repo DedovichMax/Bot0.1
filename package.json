@@ -4,14 +4,21 @@
   "description": "Telegram bot for sports betting analysis",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "dev": "node bot.js"
   },
   "dependencies": {
     "telegraf": "^4.12.2",
     "tesseract.js": "^5.0.4",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^2.6.7",
+    "sqlite3": "^5.1.6",
+    "dotenv": "^16.3.1",
+    "sharp": "^0.32.6"
   },
   "engines": {
-    "node": "18.x"
-  }
+    "node": ">=18.0.0"
+  },
+  "keywords": ["telegram", "bot", "sports", "betting"],
+  "author": "Your Name",
+  "license": "MIT"
 }
