@@ -1,0 +1,17 @@
+{
+  "name": "sports-betting-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot for sports betting analysis",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.12.2",
+    "tesseract.js": "^5.0.4",
+    "node-fetch": "^2.6.7"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
